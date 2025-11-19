@@ -1,19 +1,15 @@
 public class Nodo {
     String tarea;
     String hora;
-    Nodo next;
-    Nodo prev;
+    Nodo siguiente;
 
     public Nodo(String tarea, String hora) {
         this.tarea = tarea;
         this.hora = hora;
-        this.next = null;
-        this.prev = null;
+        this.siguiente = null;
     }
 
-    @Override
     public String toString() {
-        return tarea + " (" + hora + ")";
+        return "(" + tarea + " - " + hora + ")";
     }
 }
-
